@@ -2,7 +2,7 @@
 let news = [];
 
 const getLatestNews = async () => {
-	let url = new URL(`http://times-node-env.eba-appvq3ef.ap-northeast-2.elasticbeanstalk.com/top-headlines`);
+	let url = new URL(`https://newsnoona.netlify.app/top-headlines`);
 	const response = await fetch(url);
 	console.log('response', response);
 	const data = await response.json();
